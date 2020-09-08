@@ -7,7 +7,7 @@ export const ProjectCard = ({ project }) => {
         <div className="project-card">
             <p><b>Name:</b> {project.name}</p>
             <p><b>Description:</b> {project.description}</p>
-            <p><b>Link:</b> <a href={project.link}>{project.link}</a> </p>
+            <p><b>Link:</b> <a href={project.link} target="blank">{project.link}</a> </p>
         </div>
     )
 }
