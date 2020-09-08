@@ -1,0 +1,11 @@
+body {
+  background-color: #000013;
+  color: #8a8889;
+}
+.App {
+  text-align: center;
+	display: flex;
+	min-height: 100vh;
+  align-items: center;
+  font-family: 'Gill Sans MT', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
