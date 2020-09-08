@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/sarfarazsyed/myportfolio",
-  "name": "myPortfolio",
+  "homepage": "https://sarfarazsyed.github.io/myportfolio",
+  "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
