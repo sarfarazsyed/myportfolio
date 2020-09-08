@@ -6,6 +6,11 @@ export const projects = {
             name: "Shot Mail",
             description: "A simple mailing client to send email to multiple senders in one click.",
             link: "https://github.com/sarfarazsyed/shotmail"
+        },
+        {
+            name: "Portfolio",
+            description: "A simple portfolio using JS.",
+            link: "https://syedsarfarazahammed.github.io"
         }
     ]
 }
