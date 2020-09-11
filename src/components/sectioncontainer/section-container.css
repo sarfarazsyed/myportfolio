@@ -2,6 +2,9 @@
     text-align: left;
     padding-right: 20px;
     overflow-y: auto;
+    -moz-overflow-y: hidden;
+    -ms-overflow-y: hidden;
+    scrollbar-width: none;
 }
 
 .main-heading {
@@ -29,3 +32,6 @@
     transform: translateY(-1rem);
 }
 
+.section-container::-webkit-scrollbar {
+    display: none;
+}
