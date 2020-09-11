@@ -4,7 +4,7 @@ export const projects = {
     projectList: [
         {
             name: "Shot Mail",
-            description: "A simple mailing client to send email to multiple senders in one click.",
+            description: "A simple mailing client to mail multiple persons with their specific data in one click.",
             link: "https://github.com/sarfarazsyed/shotmail"
         },
         {

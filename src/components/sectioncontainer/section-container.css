@@ -7,13 +7,15 @@
 .main-heading {
     font-size: 42px;
     margin-bottom: 0;
-    font-family: fantasy;
+    font-family: 'Arima Madurai',fantasy, cursive;
+    font-variant: petite-caps;
 }
 
 .main-quote {
     font-size: 18px;
+    letter-spacing: 0.1em;
     margin-top: 0;
-    font-style: italic;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Times, 'Times New Roman', serif;
     white-space: pre-wrap;
 }
 
