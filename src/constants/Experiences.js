@@ -1,23 +1,28 @@
+import { SiSpring } from "react-icons/si";
+import { GiSchoolBag } from "react-icons/gi";
 export const experiences = {
-    heading: "Experiences",
-    quote: "Theory without practice is just as incomplete as practice without theory.",
-    experienceList: [
-        {
-            companyName: "Company 1",
-            role: "Software Developer",
-            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        }, {
-            companyName: "Company 2",
-            role: "Software Developer",
-            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        }, {
-            companyName: "Company 3",
-            role: "Software Developer",
-            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        }, {
-            companyName: "Company 4",
-            role: "Software Developer",
-            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        }
-    ]
+  heading: "Career History",
+  quote:
+    "Theory without practice is just as incomplete as practice without theory.",
+  careerList: [
+    {
+      profession: <SiSpring />,
+      organizationName: "Infosys Limited",
+      year: "2019 - Present",
+      place: "Hyderabad, Telangana, India",
+      role: "Digital Specialist Engineer",
+      about:
+        "I have been working as a backend developer with spring boot and postgresql as primary skills for an insurance based project.",
+    },
+    {
+      profession: <GiSchoolBag />,
+      organizationName: "Sree Vidyanikethan Engg College",
+      year: "2015 - 2019",
+      place: "Tirupati, Andhra Pradesh, India",
+      role: "Bachelor of Technology",
+      major: "Computer Science and Systems Engineering",
+      about:
+        "I graduated in C",
+    },
+  ],
 };

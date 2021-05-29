@@ -1,12 +1,17 @@
-import React from 'react';
+import React from "react";
+import styled from "styled-components";
+import { MainQuote } from "../shared/Style";
 
-import './about.css';
+const AboutContainer = styled.div`
+  font-size: 17px;
+  white-space: pre-wrap;
+`;
 
 export const About = ({ bio }) => {
-    return (
-        <div className="about-container">
-            <p>{bio.data}</p>
-            <quote>{bio.quote}</quote>
-        </div>
-    )
-}
+  return (
+    <AboutContainer>
+      <p>{bio.data}</p>
+      <MainQuote>{bio.quote}</MainQuote>
+    </AboutContainer>
+  );
+};

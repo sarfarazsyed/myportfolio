@@ -1,33 +1,56 @@
-import React from 'react';
+import React from "react";
 
-import { About } from './../About/About';
-import { Skills } from './../Skills/Skills';
-import { Projects } from './../Projects/Projects';
+import { About } from "./../About/About";
+import { Skills } from "./../Skills/Skills";
+import { Projects } from "./../Projects/Projects";
+import { ContactMe } from "./../ContactForm/ContactMe";
+import { MainQuote, MainHeading } from "../shared/Style";
+import { Experience } from "./../Experience/Experience";
+import styled from "styled-components";
 
-import './section-container.css';
+const Container = styled.div`
+  text-align: left;
+  padding-right: 20px;
+  overflow-y: auto;
+  -moz-overflow-y: hidden;
+  -ms-overflow-y: hidden;
+  scrollbar-width: none;
+`;
 
-export const SectionContainer = ({ 
-    selectedHeading, 
-    selectedQuote,
-    selectedSection,
-    about,
-    skills,
-    projects }) => {
-    return (
-        <div className="section-container">
-            <div className="section-heading-container">
-                <h2 className="main-heading">{selectedHeading}</h2>
-                <p className="main-quote">{selectedQuote}</p>
-            </div>
-            <div className="section-component">
-                {
-                    {
-                        about: <About bio={about.bio} />,
-                        skills: <Skills skills={skills} />,
-                        projects: <Projects projects={projects} />
-                    }[selectedSection]
-                }
-            </div>
-        </div>
-    )
-}
+const SectionHeading = styled.div`
+  &:: after {
+    display: inline-block;
+    content: "";
+    margin-top: 0;
+    margin-bottom: 5px;
+    transform: translateY(-1rem);
+  }
+`;
+
+const SectionComponent = styled.div`
+  &:: -webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const SectionContainer = ({ selectedSection }) => {
+  return (
+    <Container>
+      <SectionHeading>
+        <MainHeading>{selectedSection.heading}</MainHeading>
+        <MainQuote>{selectedSection.quote}</MainQuote>
+      </SectionHeading>
+      <SectionComponent>
+        {
+          {
+            "About Me": <About bio={selectedSection.bio} />,
+            Skills: <Skills skills={selectedSection} />,
+            Projects: <Projects projects={selectedSection} />,
+            "Career History": <Experience career={ selectedSection }/>,
+            "Contact Me": <ContactMe />,
+          }[selectedSection.heading]
+        }
+      </SectionComponent>
+    </Container>
+  );
+};

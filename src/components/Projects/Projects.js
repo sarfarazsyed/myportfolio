@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
+import { Container } from "../shared/Style";
 
-import { ProjectCard } from './../ProjectCard/ProjectCard';
-
-import './projects.css';
+import { ProjectCard } from "./../ProjectCard/ProjectCard";
 
 export const Projects = ({ projects }) => {
-    return (
-        <div className="projects-container">
-            <div className="industry-skill-container">
-                {
-                    projects.projectList.map(project => <ProjectCard project={project} />)
-                }
-            </div>
-        </div>
-    )
-}
+  return (
+    <Container>
+      {projects.projectList.map((project, index) => (
+        <ProjectCard project={project} key={index} />
+      ))}
+    </Container>
+  );
+};
