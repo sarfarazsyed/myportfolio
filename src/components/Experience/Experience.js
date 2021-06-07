@@ -19,6 +19,14 @@ const VerticalTimeLine = styled(VerticalTimeline)`
   }
 `;
 
+const Title = styled.h4`
+  font-variant: petite-caps;
+`;
+
+const SubTitle = styled.h6`
+  font-variant: all-petite-caps;
+`;
+
 export const Experience = (careerHistory) => {
   return (
     <>
@@ -46,13 +54,15 @@ export const Experience = (careerHistory) => {
               }}
               icon={career.profession}
             >
-              <h4 className="vertical-timeline-element-title">{career.role}</h4>
-              <h6 className="vertical-timeline-element-subtitle">
+              <Title className="vertical-timeline-element-title">
+                {career.role}
+              </Title>
+              <SubTitle className="vertical-timeline-element-subtitle">
                 {career.organizationName}
-              </h6>
-              <h6 className="vertical-timeline-element-subtitle">
+              </SubTitle>
+              <SubTitle className="vertical-timeline-element-subtitle">
                 {career.place}
-              </h6>
+              </SubTitle>
               <p>{career.about}</p>
             </VerticalTimelineElement>
           );

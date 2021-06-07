@@ -2,11 +2,11 @@ import React from "react";
 import { about } from "./../../constants/About";
 import { skills } from "./../../constants/Skills";
 import { projects } from "./../../constants/Projects";
-import { ContactMe } from "./../../constants/Contact";
+import { profile } from "../../constants/Profile";
 import { experiences } from "./../../constants/Experiences";
 import styled, { keyframes } from "styled-components";
 
-import profile from "../../images/profile.svg";
+import profileimage from "../../images/profile.svg";
 
 const Content = styled.p`
   content: "";
@@ -105,7 +105,7 @@ export const SideNav = ({ handleSectionClick }) => {
   return (
     <>
       {profile ? (
-        <AvatarImage src={profile} alt="SSA" />
+        <AvatarImage src={profileimage} alt="SSA" />
       ) : (
         <Avatar>{<Content>SSA</Content>}</Avatar>
       )}
@@ -118,9 +118,7 @@ export const SideNav = ({ handleSectionClick }) => {
         <Section onClick={() => handleSectionClick(experiences)}>
           Career History
         </Section>
-        <Section onClick={() => handleSectionClick(ContactMe)}>
-          Contact Me
-        </Section>
+        <Section onClick={() => handleSectionClick(profile)}>Profile</Section>
       </SectionList>
     </>
   );

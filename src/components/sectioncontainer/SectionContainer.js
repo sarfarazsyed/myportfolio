@@ -3,7 +3,7 @@ import React from "react";
 import { About } from "./../About/About";
 import { Skills } from "./../Skills/Skills";
 import { Projects } from "./../Projects/Projects";
-import { ContactMe } from "./../ContactForm/ContactMe";
+import { Profile } from "../Profile/Profile";
 import { MainQuote, MainHeading } from "../shared/Style";
 import { Experience } from "./../Experience/Experience";
 import styled from "styled-components";
@@ -46,8 +46,8 @@ export const SectionContainer = ({ selectedSection }) => {
             "About Me": <About bio={selectedSection.bio} />,
             Skills: <Skills skills={selectedSection} />,
             Projects: <Projects projects={selectedSection} />,
-            "Career History": <Experience career={ selectedSection }/>,
-            "Contact Me": <ContactMe />,
+            "Career History": <Experience career={selectedSection} />,
+            Profile: <Profile />,
           }[selectedSection.heading]
         }
       </SectionComponent>

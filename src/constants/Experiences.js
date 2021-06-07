@@ -16,13 +16,12 @@ export const experiences = {
     },
     {
       profession: <GiSchoolBag />,
-      organizationName: "Sree Vidyanikethan Engg College",
+      organizationName: "Sree Vidyanikethan Engineering College",
       year: "2015 - 2019",
       place: "Tirupati, Andhra Pradesh, India",
       role: "Bachelor of Technology",
       major: "Computer Science and Systems Engineering",
-      about:
-        "I graduated in C",
+      about: "I graduated in Computer Science and Systems Engineering.",
     },
   ],
 };

@@ -37,12 +37,12 @@ const Link = styled.a`
 `;
 
 const ProjectHeaders = styled.b`
-  fontvariant: "petite-caps";
+  font-variant: petite-caps;
 `;
 
 const ProjectName = styled.b`
-  alignitems: "center";
-  fontvariant: "petite-caps";
+  alignitems: center;
+  font-variant: petite-caps;
 `;
 
 const Paragraph = styled.p`
